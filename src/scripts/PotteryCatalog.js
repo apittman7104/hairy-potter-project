@@ -1,4 +1,4 @@
-let pricedPieces = [];
+const pricedPieces = [];
 
 export const toSellOrNotToSell = (pottery) => {
     if (pottery.cracked == false) {
@@ -10,8 +10,9 @@ export const toSellOrNotToSell = (pottery) => {
         }
         pricedPieces.push(pottery);
     }
+    return pottery;
 }
 
 export const usePottery = () => {
-    return pricedPieces.map(piece => piece);
+    return pricedPieces;
 }

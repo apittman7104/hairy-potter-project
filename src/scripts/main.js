@@ -25,7 +25,8 @@ toSellOrNotToSell(firedPot);
 toSellOrNotToSell(firedPlate);
 
 console.log(usePottery());
+console.log(PotteryList());
 
 // Invoke the component function that renders the HTML list
 const parentTag = document.querySelector(".potteryList");
-parentTag.innerHTML = PotteryList(usePottery());
+parentTag.innerHTML = PotteryList();
